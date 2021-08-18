@@ -13,6 +13,8 @@ public class ConsumerController {
 
     @GetMapping("/hi-feign")
     public String hiFeign() {
+
+
         return providerClient.hi("feign");
     }
 }
